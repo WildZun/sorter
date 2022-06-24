@@ -7,8 +7,6 @@ def help():
 
 def svt():
     files = os.listdir()
-    #get all files with _svt in the name
-    svt_files = [f for f in files if re.search(r'_svt', f)]
     #if SVT folder doesn't exist, create it
     if not os.path.exists('SVT'):
         os.makedirs('SVT')
@@ -89,6 +87,23 @@ def hg():
     for f in hg_files:
         move(f, 'Histoire-Géo')
 
+def nsi():
+    files = os.listdir()
+    #if SVT folder doesn't exist, create it
+    if not os.path.exists('NSI'):
+        os.makedirs('NSI')
+    #move all files with _svt in the directory called SVT
+    for f in nsi_files:
+        move(f, 'NSI')
+
+def inge():
+    files = os.listdir()
+    #if SVT folder doesn't exist, create it
+    if not os.path.exists('Sc. Ingénieur'):
+        os.makedirs('Sc. Ingénieur')
+    #move all files with _svt in the directory called SVT
+    for f in inge_files:
+        move(f, 'Sc. Ingénieur')
 
 files = os.listdir()
 hg_files = [f for f in files if re.search(r'_hg', f)]
@@ -100,6 +115,8 @@ maths_files = [f for f in files if re.search(r'_maths', f)]
 snt_files = [f for f in files if re.search(r'_snt', f)]
 pc_files = [f for f in files if re.search(r'_pc', f)]
 svt_files = [f for f in files if re.search(r'_svt', f)]
+nsi_files = [f for f in files if re.search(r'_nsi', f)]
+inge_files = [f for f in files if re.search(r'_inge', f)]
 
 if svt_files:
     print(svt_files)
@@ -136,3 +153,11 @@ if ses_files:
 if hg_files:
     print(hg_files)
     hg()
+
+if nsi_files:
+    print(nsi_files)
+    nsi()
+
+if inge_files:
+    print(inge_files)
+    inge()
