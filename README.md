@@ -15,3 +15,5 @@ The subjects are:
 - French (_fr)
 - Economic and Social Sciences (_ses)
 - SVT (_svt)
+- NSI (_nsi)
+- Sc. Ingénieur (_inge)
