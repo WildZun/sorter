@@ -7,101 +7,79 @@ def help():
 
 def svt():
     files = os.listdir()
-    #if SVT folder doesn't exist, create it
     if not os.path.exists('SVT'):
         os.makedirs('SVT')
-    #move all files with _svt in the directory called SVT
     for f in svt_files:
         move(f, 'SVT')
 
 def pc():
     files = os.listdir()
-    #if SVT folder doesn't exist, create it
     if not os.path.exists('PC'):
         os.makedirs('PC')
-    #move all files with _svt in the directory called SVT
     for f in pc_files:
         move(f, 'PC')
 
 def snt():
     files = os.listdir()
-    #if SVT folder doesn't exist, create it
     if not os.path.exists('SNT'):
         os.makedirs('SNT')
-    #move all files with _svt in the directory called SVT
     for f in snt_files:
         move(f, 'SNT')
 
 def maths():
     files = os.listdir()
-    #if SVT folder doesn't exist, create it
     if not os.path.exists('Maths'):
         os.makedirs('Maths')
-    #move all files with _svt in the directory called SVT
     for f in maths_files:
         move(f, 'Maths')
 
 def espa():
     files = os.listdir()
-    #if SVT folder doesn't exist, create it
     if not os.path.exists('Espagnol'):
         os.makedirs('Espagnol')
-    #move all files with _svt in the directory called SVT
     for f in espa_files:
         move(f, 'Espagnol')
 
 def en():
     files = os.listdir()
-    #if SVT folder doesn't exist, create it
     if not os.path.exists('Anglais'):
         os.makedirs('Anglais')
-    #move all files with _svt in the directory called SVT
     for f in en_files:
         move(f, 'Anglais')
 
 def fr():
     files = os.listdir()
-    #if SVT folder doesn't exist, create it
     if not os.path.exists('Français'):
         os.makedirs('Français')
-    #move all files with _svt in the directory called SVT
     for f in fr_files:
         move(f, 'Français')
 
 def ses():
     files = os.listdir()
-    #if SVT folder doesn't exist, create it
     if not os.path.exists('SES'):
         os.makedirs('SES')
-    #move all files with _svt in the directory called SVT
     for f in ses_files:
         move(f, 'SES')
 
 
 def hg():
     files = os.listdir()
-    #if SVT folder doesn't exist, create it
     if not os.path.exists('Histoire-Géo'):
         os.makedirs('Histoire-Géo')
-    #move all files with _svt in the directory called SVT
     for f in hg_files:
         move(f, 'Histoire-Géo')
 
 def nsi():
     files = os.listdir()
-    #if SVT folder doesn't exist, create it
     if not os.path.exists('NSI'):
         os.makedirs('NSI')
-    #move all files with _svt in the directory called SVT
     for f in nsi_files:
         move(f, 'NSI')
 
 def inge():
     files = os.listdir()
-    #if SVT folder doesn't exist, create it
     if not os.path.exists('Sc. Ingénieur'):
         os.makedirs('Sc. Ingénieur')
-    #move all files with _svt in the directory called SVT
     for f in inge_files:
         move(f, 'Sc. Ingénieur')
 
